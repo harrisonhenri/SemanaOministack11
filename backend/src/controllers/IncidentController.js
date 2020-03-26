@@ -25,14 +25,14 @@ module.exports = {
   },
 
   async create(req, res) {
-    const { title, description, valor } = req.body;
+    const { title, description, value } = req.body;
 
-    const ong_id = req.header.authorization;
+    const ong_id = req.headers.authorization;
 
     const result = await connection('incidents').insert({
       title,
       description,
-      valor,
+      value,
       ong_id
     });
 
@@ -42,13 +42,13 @@ module.exports = {
   async delete(req, res) {
     const { id } = req.params;
 
-    const ong_id = req.header.authorization;
+    const ong_id = req.headers.authorization;
     const incident = await connection('incidents')
       .where('id', id)
       .select('ong_id')
       .first();
 
-    if (incident.id != ong_id) {
+    if (incident.ong_id != ong_id) {
       return res.status(401).json({ error: 'Operation not allowed.' });
     }
 
