@@ -4,8 +4,6 @@
 
 # SemanaOministack11
 
-Repositório contendo as atividades do curso da Semana Oministack 11.
-
 ## About this Project
 
 The idea of the App is:
