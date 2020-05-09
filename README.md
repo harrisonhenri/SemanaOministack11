@@ -26,19 +26,19 @@ It's free!
 
 - Login 
 
-![](assets/login.PNG)
+![](assets/login.png)
 
 - Cases list
 
-![](assets/cases.PNG)
+![](assets/cases.png)
 
 - Create new case
 
-![](assets/newCase.PNG)
+![](assets/newCase.png)
 
 - Register new ONG
 
-![](assets/newONG.PNG)
+![](assets/newONG.png)
 
 ## Built With
 
